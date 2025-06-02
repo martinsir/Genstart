@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/taskHandlerStyle.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/icons/favicon.png">
+    
+    <title>Genstart</title>
+</head>
+
+<body>
+<!-- navbar -->
+<div class="main-content">
+<div class="home-container active" id="home-container">
+<div class="header">
+        <a href="index.html"><img src="images/logo/whitelogosmall.png" alt="Genstart-Logo" class="logo"></a>
+       
+    <div class="header-icons">
+    <i class="fa-regular fa-bell"></i> 
+    <i class="fa-regular fa-user"></i> 
+    </div>
+</div>
+
+<div class="welcome-section">
+  <p class="user"><strong>Hey Martin!</strong><br></p>
+  <p class="welcomeMsg">Genopliv. Genbrug. Genstart...</p>
+</div>
+
+
+    <!-- Input field -->
+<div class="search-wrapper">
+  <input type="text" placeholder="🔍 Søg efter funktion..." class="search-input">
+</div>
+
+    <!-- Navbar container med swipe-pile og indikator -->
+     
+    <div class="guide-wrapper">
+        <div class="guide-indicator">
+            <span class="indicator active"></span>
+            <span class="indicator"></span>
+            <span class="indicator"></span>
+        </div>
+        <div class="guide-text">
+            <p> <strong>Vejledning af materiale </strong></p>
+        </div>
+    </div>
+
+        <div class="navbar-container">
+            <!-- Venstre pil -->
+            <div class="left-arrow">
+            </div>
+
+            <div class="navbar">
+  <!-- "Se alle guides" ikon -->
+  <a class="nav-item" href="pages/guides/guide.html" title="Se alle guides">
+        <img src="images/icons/guide.png" alt="Guides" class="nav-icon">
+    </a>
+
+  <!-- Materialeikoner -->
+  <a class="nav-item" href="pages/guides/plastic.html" title="Plast">
+    <img src="images/icons/plastic.png" alt="Plast ikon" class="nav-icon">
+  </a>
+
+  <a class="nav-item" href="pages/guides/glass.html" title="Glas">
+    <img src="images/icons/glass.png" alt="Glas ikon" class="nav-icon">
+  </a>
+
+  <a class="nav-item" href="pages/guides/fabric.html" title="Tekstil">
+    <img src="images/icons/fabric.png" alt="Tekstil ikon" class="nav-icon">
+  </a>
+
+  <a class="nav-item" href="pages/guides/paper.html" title="Papir">
+    <img src="images/icons/paper.png" alt="Papir ikon" class="nav-icon">
+  </a>
+
+  <a class="nav-item" href="pages/guides/metal.html" title="Metal">
+    <img src="images/icons/metal.png" alt="Metal ikon" class="nav-icon">
+  </a>
+
+  <a class="nav-item" href="pages/guides/e-waste.html" title="Elektronik">
+    <img src="images/icons/e-waste.png" alt="Elektronik ikon" class="nav-icon">
+  </a>
+
+  <a class="nav-item" href="pages/guides/biohazard.html" title="Biohazard">
+    <img src="images/icons/bio_bin.png" alt="Biohazard ikon" class="nav-icon">
+  </a>
+
+  <a class="nav-item" href="pages/guides/hazardous.html" title="Farligt affald">
+    <img src="images/icons/hazardous-chemical.png" alt="Farligt affald ikon" class="nav-icon">
+  </a>
+
+  <a class="nav-item" href="pages/guides/organic.html" title="Madaffald">
+    <img src="images/icons/food_waste.png" alt="Madaffald ikon" class="nav-icon">
+  </a>
+    </div>
+    </div>
+
+    <!-- button img section  -->
+    <div class="button-section">
+        <!-- intro tekst-->
+  <div class="info-box">
+  <i class="fas fa-info-circle"></i>
+  <div class="info-content">
+    <p>
+      I denne version af Genstart-projektet er det kun vejledningen for <strong>Elektronikaffald (E-waste)</strong>, der er fuldt implementeret.
+      Dette inkluderer en interaktiv <em>Do's & Don'ts</em>-funktion med dynamisk farvetema, en visuel præsentation af <em>nedbrydningstider</em>, en testbar <strong>quiz</strong>, samt en <strong>scanner-simulator</strong> til fremtidig affaldsgenkendelse.
+    </p>
+    <span class="info-date">Sidst opdateret: 2. juni 2025</span>
+  </div>
+</div>
+
+
+
+        <!-- button img section functions -->
+        <div class="button-item" id="start-quiz">
+            <span class="image-label">Start Quiz!</span>
+            <img src="images/annotImg/quiz-genstart.png" alt="Quiz">
+        </div>
+        <div class="button-item">
+            <span class="image-label"> Værktøjsguide</span>
+            <a href="pages/Værktøjsguide.html" onclick="console.log('Skema link clicked!')">
+                <img src="images/annotImg/Værktøjsguide-min.png" alt="Værktøjsguide">
+            </a>
+        </div>
+        <div class="button-item">
+            <span class="image-label"> Adskille elektronik </span>
+            <a href="pages/Adskille-elektronik.html">
+                <img src="images/annotImg/Adskille-elektronik-min.png" alt="Adskille elektronik">
+            </a>
+        </div>
+        <div class="button-item">
+            <span class="image-label"> Sikkerhed ved reparation </span>
+            <a href="pages/Sikkerhed-ved-reparation.html">
+                <img src="images/annotImg/Sikkerhed-ved-reparation-min.png" alt="Sikkerhed ved reparation">
+            </a>
+        </div>
+        <div class="button-item">
+            <span class="image-label"> Materialetyper</span>
+            <a href="pages/Materialetyper.html">
+                <img src="images/annotImg/Materialetyper-min.png" alt="Materialetyper">
+            </a>
+        </div>
+        <div class="button-item">
+            <span class="image-label"> Aflever genbrug</span>
+            <a href="pages/Aflever-genbrug.html">
+                <img src="images/annotImg/Aflever-genbrug-min.png" alt="Aflever genbrug">
+            </a>
+        </div>
+        <div class="button-item">
+            <span class="image-label"> Genstart events </span>
+            <a href="pages/Genstart-events.html">
+                <img src="images/annotImg/Genstart events-min.png" alt="Genstart events">
+            </a>
+        </div>
+        <div class="button-item">
+            <span class="image-label"> Lokationer-kort</span>
+            <a href="pages/Lokationer-kort.html">
+                <img src="images/annotImg/Lokationer-kort-min.png" alt="Lokationer-kort">
+            </a>
+        </div>
+        <div class="button-item">
+            <span class="image-label"> Guide til mærkninger </span>
+            <a href="pages/Guide-til-mærkninger.html">
+                <img src="images/annotImg/Guide-til-mærkninger-min.png" alt="Guide til mærkninger">
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Quiz Container ------------------------------------------------------------------------------------------->
+<div class="quiz-container" id="quiz-container" style="display: none;">
+    <div id="progress-container" style="display: block;">
+        <div id="progress-bar"></div>
+    </div>
+    <h2 id="question">Spørgsmål vises her</h2>
+    <div id="options-container"></div>
+    <div id="feedback" style="display: none;"></div>
+    <div class="button-container">
+        <button id="next-btn" onclick="nextQuestion()">Næste</button>
+        <div id="result"></div>
+        <button id="home-btn" onclick="goToHome()">Tilbage til forsiden</button>
+    </div>
+
+    <!-- Timer sektionen -->
+    <div id="timer">
+        <span id="time-left"></span>
+        <svg class="timer-circle" width="100" height="100">
+            <circle cx="50" cy="50" r="45" stroke="#4caf50" stroke-width="10" fill="transparent" />
+            <text id="time-text" x="50%" y="50%">30</text>
+        </svg>
+        <div id="time-change"></div>
+    </div>
+</div>
+<!-- END Quiz Container ------------------------------------------------------------------------------------------>
+
+<main>
+  <!-- Bottom Navigation -->
+  <nav class="bottom-nav">
+    <a href="index.html" class="nav-btn" title="Hjem">
+      <i data-lucide="home"></i>
+    </a>
+    <button class="nav-btn" id="map-btn" title="Kort">
+      <i data-lucide="map-pin"></i>
+    </button>
+
+    <button class="nav-btn scan-btn" id="quick-scan-btn" title="Scan">
+      <i data-lucide="scan-line"></i>
+    </button>
+
+    <button class="nav-btn" id="stats-btn" title="Statistik">
+      <i data-lucide="bar-chart-3"></i>
+    </button>
+    <button class="nav-btn" id="shop-btn" title="Shop">
+      <i data-lucide="shopping-bag"></i>
+    </button>
+  </nav>
+</main>
+
+
+<!-- Scanner overlay wrapper -->
+<div id="scanner-wrapper" style="display: none;">
+  <div class="scanner-overlay">
+    <button class="close-btn" id="stop-scan-btn">✖</button>
+    <video id="video" autoplay playsinline></video>
+    <p class="scanner-instruction">Hold kameraet op til en stregkode</p>
+  </div>
+</div>
+
+
+<!-- Loading screen quiz-->
+<div id="loading-screen" style="display: none;">
+    <div class="spinner"></div>
+    <p>Indlæser quiz...</p>
+</div>
+
+</div>  <!-- END Main-content -->
+
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-section about">
+            <h2>Om os</h2>
+            <p>
+               Genstart er et bæredygtigt initiativ udviklet af studerende på Zealand. 
+               Vi hjælper dig med at genbruge gammel elektronik og skabe en grønnere fremtid – ét device ad gangen.
+            </p>
+
+        </div>
+        <div class="footer-section links">
+            <h2>SupportSquad</h2>
+            <ul id="footer-container">
+                <li><a href="index.html">Startside</a></li>
+                <li><a href="pages/footer-pages/IT-Hjælp.html">IT-Hjælp</a></li>
+                <li><a href="pages/footer-pages/Sikkerhed.html">Sikkerhed ved reparation</a></li>
+                  <li><a href="pages/footer-pages/Aflevering.html">Aflever elektronik</a></li>
+            </ul>
+        </div>
+        <div class="footer-section contact">
+            <h2>Kontakt os på</h2>
+            <p><i class="fas fa-envelope"></i> <a href="mailto:Genstart@zealand.dk">Genstart@zealand.dk</a></p>
+            <p><i class="fas fa-phone"></i> <a href="tel:+4550762600">+45 5076 2600</a></p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+         <p>&copy; 2025 Genstart – En kampagne for grøn teknologi</p>
+    </div>
+</footer>
+
+
+<script src="js/taskHandler.js"></script>
+<script src="js/forsideHandler.js"></script>
+</body>
+</html>

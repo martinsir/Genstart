@@ -1,0 +1,103 @@
+/* --- Dropup Container --- */
+.dropup {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+  text-align: center;
+  pointer-events: none;
+}
+
+/* --- Dropup Button --- */
+.dropup-btn {
+  z-index: 10;
+  position: relative;
+  background-color: #000000;
+  color: #fff387;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+  pointer-events: auto;
+  transition: transform 0.5s ease-in-out;
+}
+
+.dropup-btn.active {
+  background-color: #3e8e41;
+}
+
+/* --- Scanner Handler (formerly task-handler) --- */
+.task-handler {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  z-index: 2;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 1));
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* --- Make visible --- */
+.task-handler.visible {
+  max-height: 50vh;
+  opacity: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+/* --- Scanner Interface --- */
+.task-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px;
+}
+
+#scanner-video {
+  width: 100%;
+  max-width: 400px;
+  border: 3px solid #006F53;
+  border-radius: 10px;
+  display: none; /* Toggle this with JS */
+}
+
+#start-scanner {
+  background-color: #006F53;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#start-scanner:hover {
+  background-color: #F58220;
+}
+
+/* --- Active state --- */
+.dropup.open .dropup-btn {
+  transform: translateY(-50vh);
+}
+
+.dropup.open .task-handler {
+  transform: translateY(0);
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  .task-form {
+    padding: 10px;
+  }
+}

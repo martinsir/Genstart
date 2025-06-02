@@ -1,0 +1,10 @@
+.guide-wrapper {
+  background-color: #f4f4f5;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.navbar-container .nav-icon {
+  width: 60px;
+  height: auto;
+}
